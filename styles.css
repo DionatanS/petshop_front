@@ -255,8 +255,7 @@ header{
 
 
 
-/* Criação do slide */
-
+/* ############Criação do slide############### */
 
 .text-center {
     text-align: center;
@@ -312,30 +311,12 @@ header{
     width: 159px;
   }
   
-  /* .slider-item__image {
-    position: relative;
-    width: 160px;
-    overflow: hidden;
-  } */
-  
-  /* .slider-item__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
-  
-  /* .slider-item__body {
+  .exclusive-side-banner{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-block: 90px;
     gap: 10px;
-    align-items: center;
-  } */
-  
-  /* .slider-item__name {
-    margin: 0;
-    font-size: 2rem;
-  } */
-  
-  /* .slider-item__description {
-    margin: 0;
-  } */
+  }
+  .exclusive-side-banner img{
+    width: 335px;
+  }

@@ -32,8 +32,6 @@ function productsDetails() {
 
 // ********** Criação do slide ***************
 
-
-
 const sliderControls = document.querySelector('.slider-controls'),
 sliderList = document.querySelector('.slider-list');
 console.log(sliderList)
@@ -45,12 +43,12 @@ productsExclusive.map((product, index) => {
   `;
     const slide = `
     <div class="slider-item" id="slider-${index}">
-        <img src="${product['url-img']}" alt="" id="product-img-4" class="img-products-exclusive">
-        <p id="product-name-4" >${product.name}</p>
+        <img src="${product['url-img']}" alt=""  class="img-products-exclusive">
+        <p>${product.name}</p>
         <img src="./images/products/rate.png" alt="" class="products-rate">
         <span class="price">
-            <span class="new-price"> R$ <span id="new-price">${product['new-price']}</span></span>
-            <span id="product-old-price-4" class="old-price">R$ <span id="old-price">${product['old-price']}</span></span>
+            <span class="new-price"> R$ <span>${product['new-price']}</span></span>
+            <span class="old-price">R$ <span>${product['old-price']}</span></span>
         </span>
         <button class="btn-buy">COMPRAR</button>
     </div>
