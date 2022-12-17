@@ -217,14 +217,42 @@ header{
         align-items: center;
         margin-top: 50px;
 }
-.content-title-section-exclusive{
+.content-title-section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.content-title-section-exclusive h2{
+.content-title-section h2{
     font-weight: 500;
+    position: relative;
 }
+
+
+
+.content-title-section h2::after,
+.content-title-section h2::before{
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-bottom: 1px dashed black;
+    position: absolute;
+    top: 50%;
+}
+.content-title-section h2::before{
+    left: 120%;
+    transform: translateY(-50%);
+}
+.content-title-section h2::after{
+    right: 120%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
 .nav-btn-slid{
     display: flex;
     gap: 10px;
