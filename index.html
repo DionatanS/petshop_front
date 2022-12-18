@@ -9,17 +9,20 @@
 </head>
 <body>
     <!-- Modal-Newsletter -->
-    <div class="modal">
-            <button class="btn-close-nesletter">X</button>
+    <div id="modal" class="modal">
+            <button onclick="closeModal()" class="btn-close-nesletter">X</button>
             <div class="content-modal">
                 <p>Que tal um descontão <br> de <b>10%</b> na sua compra?</p>
                 <p>Cadastre-se e ganhe um <br> <b>super desconto</b> para aproveitar e deixar seu pet felizão</p>
 
                 <div class="content-input">
-                    <input type="email" placeholder="email@exemplo.com">
-                    <button>CADASTRAR</button>
+                    <input id="input-nesletter" onkeyup="enableButton()" type="email" placeholder="email@exemplo.com">
+                    <button id="btn-newsletter" disabled onclick="register()">CADASTRAR</button>
                 </div>
-            </div>
+                <div id="alert" class="alert">
+                    Email cadastrado com sucesso!
+                </div>
+            </div>   
         </div>
     <!-- Modal-Newsletter -->
     <header>
@@ -137,5 +140,6 @@
 
     </header>
     <script type="module" src="./config.js"></script>
+    <script src="./newsletter.js"></script>
 </body>
 </html>

@@ -57,6 +57,7 @@ button{
     font-size: 20px;
     font-weight: 700;
 }
+
 .content-modal{
     display: flex;
     flex-direction: column;
@@ -89,6 +90,22 @@ button{
     background-color: #000;
     color: #fff;
     outline: 0;
+}
+.content-input button[disabled]{
+    background-color: #c4c4c4;
+}
+.alert{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -12px;
+    padding-bottom: 2px;
+
+    background-color: rgb(28, 173, 9);
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
 }
 
 
@@ -352,7 +369,7 @@ header{
 
 
 
-/* ############Criação do slide############### */
+/* ############ Criação do slide ############### */
 
 .text-center {
     text-align: center;

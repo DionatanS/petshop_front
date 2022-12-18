@@ -2,6 +2,7 @@ import products from './products.js'
 console.log(products['best-sallers'])
 const productsExclusive = products.exclusive
 
+
 document.addEventListener("DOMContentLoaded", function (event) {
     productsDetails()
 });
