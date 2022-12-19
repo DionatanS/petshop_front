@@ -112,7 +112,6 @@ button{
 
 header{
     width: 100%;
-    height: 160px;
 }
 .content-header{
     display: flex;
@@ -296,12 +295,17 @@ header{
     text-decoration: line-through;
 }
 
-.exclusive{
+.content-section{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+}
+#best-sallers{
+    width: 100%;
+    background-color: #f7f3f0;
+    padding-block: 25px;
 }
 .content-title-section{
     display: flex;
@@ -311,9 +315,8 @@ header{
 .content-title-section h2{
     font-weight: 500;
     position: relative;
+    padding-left: 10px;
 }
-
-
 
 .content-title-section h2::after,
 .content-title-section h2::before{
@@ -333,13 +336,7 @@ header{
     transform: translateY(-50%);
 }
 
-
-
-
-
-
-
-.nav-btn-slid{
+/* .nav-btn-slid{
     display: flex;
     gap: 10px;
     margin-top: 8px;
@@ -350,24 +347,7 @@ header{
     background-color: rgba(0, 0, 0, 0.095);
     border-radius: 15px;
     cursor: pointer;
-}
-.content-slid{
-    display: flex;
-    width: 685px;
-    max-width: 685px;
-    height: 300px;
-    overflow: hidden;
-
-    background-color: aqua;
-
-    padding-inline: 5px;
-    margin-top: 30px;
-    gap: 5px;
-}
-
-
-
-
+} */
 
 /* ############ Criação do slide ############### */
 
@@ -376,30 +356,36 @@ header{
   }
   
   .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     height: auto;
     overflow: hidden;
     padding-left: 10px;
+    margin-left: 5px;
   }
   
-  .slider-list, .slider-controls {
+  .slider-list, .slider-controls, .slider-list-best-sallers{
     margin-top: 5px;
     width: 680px;
     display: flex;
     flex-wrap: nowrap;
   }
   
-  .slider-list {
+  .slider-list ,.slider-list-best-sallers{
     margin-top: 20px;
     transition: transform .4s cubic-bezier(0.215, 0.610, 0.355, 1);
     justify-content: flex-start;
   }
   
-  .slider-controls {
+  .slider-controls, .slider-controls-best-sallers {
     gap: 10px;
     justify-content: center;
   }
   
-  .slider-controls__button {
+  .slider-controls__button,
+  .slider-controls__button_best-sallers {
     margin: 0;
     padding: 0;
     font-size: 0;
@@ -411,7 +397,8 @@ header{
     transition: background-color .4s ease;
   }
   
-  .slider-controls__button.is-active {
+  .slider-controls__button.is-active,
+  .slider-controls__button_best-sallers.is-active {
     background-color: var(--button-buy-color);
   }
   
@@ -428,9 +415,25 @@ header{
   .exclusive-side-banner{
     display: flex;
     justify-content: center;
-    margin-block: 90px;
+    margin-top: 70px;
     gap: 10px;
   }
   .exclusive-side-banner img{
     width: 335px;
   }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+footer img{
+    padding-block: 25px;
+}
+.content-footer{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

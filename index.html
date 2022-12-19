@@ -5,58 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./newsletter/newsletter.css">
     <title>Auau Pet Shop</title>
 </head>
 <body>
-    <!-- Modal-Newsletter -->
-    <div id="modal" class="modal">
-            <button onclick="closeModal()" class="btn-close-nesletter">X</button>
-            <div class="content-modal">
-                <p>Que tal um descontão <br> de <b>10%</b> na sua compra?</p>
-                <p>Cadastre-se e ganhe um <br> <b>super desconto</b> para aproveitar e deixar seu pet felizão</p>
+        <!-- Modal-Newsletter -->
+            <div id="modal" class="modal">
+                <button onclick="closeModal()" class="btn-close-nesletter">X</button>
+                <div class="content-modal">
+                    <p>Que tal um descontão <br> de <b>10%</b> na sua compra?</p>
+                    <p>Cadastre-se e ganhe um <br> <b>super desconto</b> para aproveitar e deixar seu pet felizão</p>
 
-                <div class="content-input">
-                    <input id="input-nesletter" onkeyup="enableButton()" type="email" placeholder="email@exemplo.com">
-                    <button id="btn-newsletter" disabled onclick="register()">CADASTRAR</button>
+                    <div class="content-input">
+                        <input id="input-nesletter" onkeyup="enableButton()" type="email" placeholder="email@exemplo.com">
+                        <button id="btn-newsletter" disabled onclick="register()">CADASTRAR</button>
+                    </div>
+                    <div id="alert" class="alert">
+                        Email cadastrado com sucesso!
+                    </div>
+                </div>   
+            </div>
+        <!-- Modal-Newsletter -->
+        <header>
+            <div class="content-header">
+                <span>Frete Grátis - <b>Acima R$ 299</b> - Sul e Sudeste</span>
+                <span class="space"></span>
+                <span>Não serviu? A <b>primeira troca é grátis</b></span>
+                <span class="space"></span>
+                <span><b>10% de desconto no boleto</b></span>
+                <span class="space"></span>
+                <span>Pague em até <b>10x sem jutos</b></span>
+            </div>        
+            <div class="nav-header">
+                <div>
+                    <img src="./images/header/logo.png" alt="" class="logo">
                 </div>
-                <div id="alert" class="alert">
-                    Email cadastrado com sucesso!
+                <div class="nav">
+                    <a href="#">Rações <img src="./images/header/arrow.png" alt=""></a>
+                    <a href="#">Acessórios <img src="./images/header/arrow.png" alt=""></a>
+                    <a href="#">Kits <img src="./images/header/arrow.png" alt=""></a>
+                    <a href="#">Combos </a>
+                    <a href="#" class="promotion">Promoções</a>                
                 </div>
-            </div>   
-        </div>
-    <!-- Modal-Newsletter -->
-    <header>
-        <div class="content-header">
-            <span>Frete Grátis - <b>Acima R$ 299</b> - Sul e Sudeste</span>
-            <span class="space"></span>
-            <span>Não serviu? A <b>primeira troca é grátis</b></span>
-            <span class="space"></span>
-            <span><b>10% de desconto no boleto</b></span>
-            <span class="space"></span>
-            <span>Pague em até <b>10x sem jutos</b></span>
-        </div>        
-        <div class="nav-header">
-            <div>
-                <img src="./images/header/logo.png" alt="" class="logo">
+                <div class="actions">
+                    <a href="#"><img src="./images/header/search.png" alt=""></a>
+                    <a href="#"><img src="./images/header/wish.png" alt=""></a>
+                    <a href="#"><img src="./images/header/cart.png" alt=""></a>
+                    
+                </div>
             </div>
-            <div class="nav">
-                <a href="#">Rações <img src="./images/header/arrow.png" alt=""></a>
-                <a href="#">Acessórios <img src="./images/header/arrow.png" alt=""></a>
-                <a href="#">Kits <img src="./images/header/arrow.png" alt=""></a>
-                <a href="#">Combos </a>
-                <a href="#" class="promotion">Promoções</a>                
+            <div class="full-banner">
+                <img src="./images/banners/full-banner.png" alt="">
             </div>
-            <div class="actions">
-                <a href="#"><img src="./images/header/search.png" alt=""></a>
-                <a href="#"><img src="./images/header/wish.png" alt=""></a>
-                <a href="#"><img src="./images/header/cart.png" alt=""></a>
-                
-            </div>
-        </div>
-        <div class="full-banner">
-            <img src="./images/banners/full-banner.png" alt="">
-        </div>
-
+        </header>
 
         <div class="main">
             <section class="darlings">
@@ -114,7 +115,7 @@
                     </div>
             </section>
 
-            <section class="exclusive">
+            <section id="exclusive" class="content-section">
                 <div class="content-title-section">
                     <h2>Produtos <b>Exclusivos</b></h2>                    
                 </div>
@@ -130,16 +131,39 @@
                 </div>  
             </section>
 
-            <section class="best-sallers">
+            <section id="best-sallers" class="content-section">
                 <div class="content-title-section">
-                    <h2>Mais Vendidos</h2>
-                    
+                    <h2>Mais Vendidos</h2>                    
+                </div>
+                <div class="slider">
+                    <div class="slider-controls-best-sallers"></div>
+                    <div class="slider-list-best-sallers"></div>
                 </div>
             </section>
         </div>
 
-    </header>
+        <footer>
+            <div class="content-footer">
+                <img src="./images/header/logo.png" alt="">
+                <div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/footer/brands.png" alt="">
+                </div>
+            </div>            
+        </footer>
+
+    
     <script type="module" src="./config.js"></script>
-    <script src="./newsletter.js"></script>
+    <script src="./newsletter/newsletter.js"></script>
 </body>
 </html>

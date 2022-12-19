@@ -1,28 +1,28 @@
 export default {
     "darlings": [
         {
-            "id":"44",
+            "id":"1",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"45",
+            "id":"2",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
             "url-img":"./images/products/coleira.png"
         },
         {
-            "id":"46",
+            "id":"3",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"47",
+            "id":"4",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
@@ -31,110 +31,110 @@ export default {
     ],
     "exclusive":[
         {
-            "id":"50",
+            "id":"5",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"51",
+            "id":"6",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
             "url-img":"./images/products/coleira.png"
         },
         {
-            "id":"52",
+            "id":"7",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"53",
-            "name":"Coleira G",
-            "new-price":"15.90",
-            "old-price":"20.90",
-            "url-img":"./images/products/coleira.png"
-        }, {
-            "id":"54",
-            "name":"Guia para passeio- 3m",
-            "new-price":"18.90",
-            "old-price":"35.90",
-            "url-img":"./images/products/guia.png"
-        },
-        {
-            "id":"55",
-            "name":"Coleira G",
-            "new-price":"15.90",
-            "old-price":"20.90",
-            "url-img":"./images/products/coleira.png"
-        },
-        {
-            "id":"56",
-            "name":"Guia para passeio- 3m",
-            "new-price":"18.90",
-            "old-price":"35.90",
-            "url-img":"./images/products/guia.png"
-        },
-        {
-            "id":"57",
+            "id":"8",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
             "url-img":"./images/products/coleira.png"
         }, {
-            "id":"58",
+            "id":"9",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"59",
+            "id":"10",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
             "url-img":"./images/products/coleira.png"
         },
         {
-            "id":"60",
+            "id":"11",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"61",
+            "id":"12",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        }, {
+            "id":"13",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"14",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
             "url-img":"./images/products/coleira.png"
         },
         {
-            "id":"62",
+            "id":"15",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"63",
+            "id":"16",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
             "url-img":"./images/products/coleira.png"
         },
         {
-            "id":"64",
+            "id":"17",
             "name":"Guia para passeio- 3m",
             "new-price":"18.90",
             "old-price":"35.90",
             "url-img":"./images/products/guia.png"
         },
         {
-            "id":"65",
+            "id":"18",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
+        {
+            "id":"19",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"20",
             "name":"Coleira G",
             "new-price":"15.90",
             "old-price":"20.90",
@@ -143,34 +143,116 @@ export default {
         
     ],
     "best-sallers":[
-            {
-                "id":"44",
-                "name":"Guia para passeio- 3m",
-                "new-price":"18.90",
-                "old-price":"35.90",
-                "url-img":"./images/products/guia.png"
-            },
-            {
-                "id":"45",
-                "name":"Coleira G",
-                "new-price":"15.90",
-                "old-price":"20.90",
-                "url-img":"./images/products/coleira.png"
-            },
-            {
-                "id":"46",
-                "name":"Guia para passeio- 3m",
-                "new-price":"18.90",
-                "old-price":"35.90",
-                "url-img":"./images/products/guia.png"
-            },
-            {
-                "id":"47",
-                "name":"Coleira G",
-                "new-price":"15.90",
-                "old-price":"20.90",
-                "url-img":"./images/products/coleira.png"
-            }
+        {
+            "id":"21",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"22",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
+        {
+            "id":"23",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"24",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        }, {
+            "id":"25",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"26",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
+        {
+            "id":"27",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"28",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        }, {
+            "id":"29",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"30",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
+        {
+            "id":"31",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"32",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
+        {
+            "id":"33",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"34",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
+        {
+            "id":"35",
+            "name":"Guia para passeio- 3m",
+            "new-price":"18.90",
+            "old-price":"35.90",
+            "url-img":"./images/products/guia.png"
+        },
+        {
+            "id":"36",
+            "name":"Coleira G",
+            "new-price":"15.90",
+            "old-price":"20.90",
+            "url-img":"./images/products/coleira.png"
+        },
     ]
 }
 

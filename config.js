@@ -1,6 +1,7 @@
 import products from './products.js'
 console.log(products['best-sallers'])
 const productsExclusive = products.exclusive
+const productBestSallers = products['best-sallers']
 
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -30,8 +31,7 @@ function productsDetails() {
 }
 
 
-
-// ********** Criação do slide ***************
+// ********** Criação do slide (Produtos exclusivos) ***************
 
 const sliderControls = document.querySelector('.slider-controls'),
 sliderList = document.querySelector('.slider-list');
@@ -83,4 +83,69 @@ function changeSlide(evt) {
 
 buttons.forEach(button => {
     button.addEventListener('click', changeSlide);
+});
+
+
+
+
+
+// ********** Criação do slide (Mais vendidos) ***************
+
+const sliderControlsBestSallers = document.querySelector('.slider-controls-best-sallers'),
+sliderListBestSallers = document.querySelector('.slider-list-best-sallers');
+console.log(sliderListBestSallers)
+let lastIndexBestSallers = 0, currentIndexBestSallers;
+
+productBestSallers.map((product, index) => {
+    const button = `
+    <button class="slider-controls__button_best-sallers ${index == 0 ? `is-active` : ''}" id="slide-button-${index}" type="button">Slide ${product.id}</button>
+  `;
+    const slide = `
+    <div class="slider-item" id="slider-${index}">
+        <img src="${product['url-img']}" alt=""  class="img-products-exclusive">
+        <p>${product.name}</p>
+        <img src="./images/products/rate.png" alt="" class="products-rate">
+        <span class="price">
+            <span class="new-price"> R$ <span>${product['new-price']}</span></span>
+            <span class="old-price">R$ <span>${product['old-price']}</span></span>
+        </span>
+        <button class="btn-buy">COMPRAR</button>
+    </div>
+  `;
+
+    index <= productsExclusive.length / 5 ? sliderControlsBestSallers.innerHTML += button : false;
+    sliderListBestSallers.innerHTML += slide;
+});
+
+const slidersBestSallers = document.querySelectorAll('.slider-item');
+const slideWidthBestSallers = slidersBestSallers[0].clientWidth;
+console.log(slideWidth)
+console.log(sliderList.clientWidth)
+const getGapBestSallers = () => (sliderListBestSallers.clientWidth / 4) - slideWidthBestSallers;
+console.log((sliderListBestSallers.clientWidth / 4) - slideWidthBestSallers)
+sliderListBestSallers.style.gap = `${getGapBestSallers()}px`;
+window.onresize = () => sliderListBestSallers.style.gap = `${getGapBestSallers()}px`;
+
+
+
+
+
+
+const buttonsBestSallers = document.querySelectorAll('.slider-controls__button_best-sallers');
+
+function changeSlidBestSallers(evt) {
+    console.log('Changing slide best sallers');
+    currentIndexBestSallers = evt.currentTarget.id.split('-')[2];
+    console.log(currentIndexBestSallers)
+    if (currentIndexBestSallers == lastIndexBestSallers) return;
+    sliderListBestSallers.style.transform = currentIndexBestSallers == 0 ?
+        `translateX(-${slideWidth * currentIndexBestSallers}px)` :
+        `translateX(-${ + (sliderListBestSallers.clientWidth * currentIndexBestSallers)}px)`;
+        buttonsBestSallers[currentIndexBestSallers].classList.add('is-active');
+    buttonsBestSallers[lastIndexBestSallers].classList.remove('is-active');
+    lastIndexBestSallers = currentIndexBestSallers;
+}
+
+buttonsBestSallers.forEach(button => {
+    button.addEventListener('click', changeSlidBestSallers);
 });
