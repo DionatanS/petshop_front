@@ -28,6 +28,7 @@ button{
     cursor: pointer;
 }
 
+/* Criação do modal/newsletter */
 .modal{
     display: flex;
     flex-direction: column;
@@ -112,6 +113,11 @@ button{
 
 header{
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0px 0.5px 5px #c4c4c4;
 }
 .content-header{
     display: flex;
@@ -428,12 +434,37 @@ header{
     align-items: center;
   }
 
-footer img{
-    padding-block: 25px;
-}
 .content-footer{
-    width: 680px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.content-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 25px;
+}
+.content-info h3{
+    margin-bottom: 10px;
+}
+.content-info div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.logo-jet{
+    width: 55px;
+}
+.logo-compre-confie{
+    width: 90px;
+}
+footer .content-info img{
+    padding-block: 2px;
+}
+
+footer img{
+    padding-block: 25px;
 }
