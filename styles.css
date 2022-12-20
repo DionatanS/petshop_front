@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    font-family:'Roboto', sans-serif;;
+}
+
 :root{
     --header-bg-color:#eda569;
     --button-bg-color:#fcbd24;
     --button-buy-color:#ef6b00;
 }
-/* #eda569
-#fcbd24
-#ef6b00
-#777777 */
 * {
     padding:0;
     margin:0;
@@ -110,13 +112,12 @@ button{
 }
 
 
-
 header{
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 2;
     box-shadow: 0px 0.5px 5px #c4c4c4;
 }
 .content-header{
@@ -169,6 +170,7 @@ header{
 }
 
 .full-banner img{
+    margin-top: 170px;
     width: 100%;
 }
 
@@ -342,19 +344,6 @@ header{
     transform: translateY(-50%);
 }
 
-/* .nav-btn-slid{
-    display: flex;
-    gap: 10px;
-    margin-top: 8px;
-}
-.btn-slid{
-    width: 40px;
-    height: 5px;
-    background-color: rgba(0, 0, 0, 0.095);
-    border-radius: 15px;
-    cursor: pointer;
-} */
-
 /* ############ Criação do slide ############### */
 
 .text-center {
@@ -413,6 +402,7 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 2px;
+    text-align: center;
   }
   .img-products-exclusive{
     width: 159px;

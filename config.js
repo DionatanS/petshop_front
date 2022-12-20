@@ -13,21 +13,25 @@ function productsDetails() {
     document.getElementById('product-new-price-1').textContent = products['darlings'][0]['new-price']
     document.getElementById('product-old-price-1').textContent = products['darlings'][0]['old-price']
     document.getElementById('product-img-1').setAttribute('src', products['darlings'][0]['url-img'])
+    document.getElementById('btn-buy-1').setAttribute('onclick','addItenInCart('+products['darlings'][0]['id']+')')
 
     document.getElementById('product-name-2').textContent = products['darlings'][1].name
     document.getElementById('product-new-price-2').textContent = products['darlings'][1]['new-price']
     document.getElementById('product-old-price-2').textContent = products['darlings'][1]['old-price']
     document.getElementById('product-img-2').setAttribute('src', products['darlings'][1]['url-img'])
+    document.getElementById('btn-buy-2').setAttribute('onclick','addItenInCart('+products['darlings'][1]['id']+')')
 
     document.getElementById('product-name-3').textContent = products['darlings'][2].name
     document.getElementById('product-new-price-3').textContent = products['darlings'][2]['new-price']
     document.getElementById('product-old-price-3').textContent = products['darlings'][2]['old-price']
     document.getElementById('product-img-3').setAttribute('src', products['darlings'][2]['url-img'])
+    document.getElementById('btn-buy-3').setAttribute('onclick','addItenInCart('+products['darlings'][2]['id']+')')
 
     document.getElementById('product-name-4').textContent = products['darlings'][3].name
     document.getElementById('product-new-price-4').textContent = products['darlings'][3]['new-price']
     document.getElementById('product-old-price-4').textContent = products['darlings'][3]['old-price']
     document.getElementById('product-img-4').setAttribute('src', products['darlings'][3]['url-img'])
+    document.getElementById('btn-buy-4').setAttribute('onclick','addItenInCart('+products['darlings'][3]['id']+')')
 }
 
 
@@ -51,7 +55,7 @@ productsExclusive.map((product, index) => {
             <span class="new-price"> R$ <span>${product['new-price']}</span></span>
             <span class="old-price">R$ <span>${product['old-price']}</span></span>
         </span>
-        <button class="btn-buy">COMPRAR</button>
+        <button class="btn-buy" onclick="addItenInCart(${product.id})">COMPRAR</button>
     </div>
   `;
 
@@ -109,7 +113,7 @@ productBestSallers.map((product, index) => {
             <span class="new-price"> R$ <span>${product['new-price']}</span></span>
             <span class="old-price">R$ <span>${product['old-price']}</span></span>
         </span>
-        <button class="btn-buy">COMPRAR</button>
+        <button class="btn-buy" onclick="addItenInCart(${product.id})">COMPRAR</button>
     </div>
   `;
 
@@ -125,10 +129,6 @@ const getGapBestSallers = () => (sliderListBestSallers.clientWidth / 4) - slideW
 console.log((sliderListBestSallers.clientWidth / 4) - slideWidthBestSallers)
 sliderListBestSallers.style.gap = `${getGapBestSallers()}px`;
 window.onresize = () => sliderListBestSallers.style.gap = `${getGapBestSallers()}px`;
-
-
-
-
 
 
 const buttonsBestSallers = document.querySelectorAll('.slider-controls__button_best-sallers');
@@ -149,3 +149,4 @@ function changeSlidBestSallers(evt) {
 buttonsBestSallers.forEach(button => {
     button.addEventListener('click', changeSlidBestSallers);
 });
+

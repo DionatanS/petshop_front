@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./newsletter/newsletter.css">
+    <link rel="stylesheet" href="./cart/cart.css">
     <title>Auau Pet Shop</title>
 </head>
 <body>
@@ -29,11 +29,89 @@
 
 
         <!-- Carrinho de compras -->
-
-        <div class="cart">
+        <div class="content-cart">
             
         </div>
+        <div class="cart">
+            <div class="header-cart">
+                <span>MINHA SACOLA</span>
+                <button class="closeCart">X</button>
+            </div>
 
+            <div class="list-cart">
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+                <div class="product-iten-cart">
+                    <img src="./images/products/coleira.png" alt="">
+                    <div class="description-iten-cart">
+                        <h3 class="name-iten">Nome do item</h3>
+                        <span class="cor-iten">Cor: Misto</span>
+                        <span class="size-iten">Tamanho: 3m</span>
+                        <span class="price-iten">R$ 18,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-cart">
+                <div class="sub-total-cart">
+                    <span>SUBTOTAL: R$ <span>18,90</span></span>
+                </div>
+                <button class="btn-keep-buying">Continuar Comprando</button>
+                <button class="btn-checkout">FINALIZAR COMPRA</button>
+            </div>
+        </div>
         <!-- Carrinho de compras -->
 
         <header>
@@ -87,14 +165,14 @@
                                 <p id="product-name-1">Guia para passeio - 3m</p>
                                 <img src="./images/products/rate.png" alt="" class="products-rate">
                                 <span class="price"><span id="product-new-price-1" class="new-price">18.90</span> <span id="product-old-price-1" class="old-price">35.90</span></span>
-                                <button class="btn-buy">COMPRAR</button>
+                                <button id="btn-buy-1" class="btn-buy">COMPRAR</button>
                             </div>
                             <div>
                                 <img src="" alt="" id="product-img-2" class="img-products">
                                 <p id="product-name-2" >Guia para passeio - 3m</p>
                                 <img src="./images/products/rate.png" alt="" class="products-rate">
                                 <span class="price"><span id="product-new-price-2" class="new-price">18.90</span> <span id="product-old-price-2" class="old-price">35.90</span></span>
-                                <button class="btn-buy">COMPRAR</button>
+                                <button id="btn-buy-2" class="btn-buy">COMPRAR</button>
                             </div>
                             <div></div>
                         </div> 
@@ -107,7 +185,7 @@
                                     <span id="product-new-price-3" class="new-price">18.90</span> 
                                     <span id="product-old-price-3" class="old-price">35.90</span>
                                 </span>
-                                <button class="btn-buy">COMPRAR</button>
+                                <button id="btn-buy-3" class="btn-buy">COMPRAR</button>
                             </div>
                             <div>
                                 <img src="" alt="" id="product-img-4" class="img-products">
@@ -117,7 +195,7 @@
                                     <span id="product-new-price-4" class="new-price"> R$ <span id="new-price">18.90</span></span>
                                     <span id="product-old-price-4" class="old-price">R$ <span id="old-price">35.90</span></span>
                                 </span>
-                                <button class="btn-buy">COMPRAR</button>
+                                <button id="btn-buy-4" class="btn-buy">COMPRAR</button>
                             </div>
                         </div> 
                         <div class="side-banner-2">
@@ -186,5 +264,6 @@
     
     <script type="module" src="./config.js"></script>
     <script src="./newsletter/newsletter.js"></script>
+    <script src="./cart/cart.js"></script>
 </body>
 </html>
