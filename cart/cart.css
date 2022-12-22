@@ -4,7 +4,7 @@
     font-family:'Roboto', sans-serif;
 }
 .cart{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 
@@ -44,6 +44,7 @@
     width: 100%;
     height: 70%;
     overflow-y: auto;
+    margin-top: 3px;
 }
 
 .cart .sub-total-cart{
@@ -88,7 +89,7 @@
     border-radius: 5px;
 }
 .list-cart h3{
-    font-size: 18px;
+    font-size: 17px;
 }
 .list-cart .description-iten-cart{
     display: flex;
@@ -96,10 +97,10 @@
     font-size: 18px;
 }
 .list-cart .cor-iten{
-    margin-top: 14px;
+    margin-top: 10px;
 }
 .list-cart .price-iten{
-    margin-top: 14px;
+    margin-top: 10px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }

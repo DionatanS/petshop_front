@@ -1,4 +1,5 @@
 import products from './products.js'
+
 console.log(products['best-sallers'])
 const productsExclusive = products.exclusive
 const productBestSallers = products['best-sallers']
@@ -10,27 +11,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 function productsDetails() {
     document.getElementById('product-name-1').textContent = products['darlings'][0].name
-    document.getElementById('product-new-price-1').textContent = products['darlings'][0]['new-price']
+    document.getElementById('product-new-price-1').textContent = products['darlings'][0]['newPrice']
     document.getElementById('product-old-price-1').textContent = products['darlings'][0]['old-price']
-    document.getElementById('product-img-1').setAttribute('src', products['darlings'][0]['url-img'])
+    document.getElementById('product-img-1').setAttribute('src', products['darlings'][0]['urlImg'])
     document.getElementById('btn-buy-1').setAttribute('onclick','addItenInCart('+products['darlings'][0]['id']+')')
 
     document.getElementById('product-name-2').textContent = products['darlings'][1].name
-    document.getElementById('product-new-price-2').textContent = products['darlings'][1]['new-price']
+    document.getElementById('product-new-price-2').textContent = products['darlings'][1]['newPrice']
     document.getElementById('product-old-price-2').textContent = products['darlings'][1]['old-price']
-    document.getElementById('product-img-2').setAttribute('src', products['darlings'][1]['url-img'])
+    document.getElementById('product-img-2').setAttribute('src', products['darlings'][1]['urlImg'])
     document.getElementById('btn-buy-2').setAttribute('onclick','addItenInCart('+products['darlings'][1]['id']+')')
 
     document.getElementById('product-name-3').textContent = products['darlings'][2].name
-    document.getElementById('product-new-price-3').textContent = products['darlings'][2]['new-price']
+    document.getElementById('product-new-price-3').textContent = products['darlings'][2]['newPrice']
     document.getElementById('product-old-price-3').textContent = products['darlings'][2]['old-price']
-    document.getElementById('product-img-3').setAttribute('src', products['darlings'][2]['url-img'])
+    document.getElementById('product-img-3').setAttribute('src', products['darlings'][2]['urlImg'])
     document.getElementById('btn-buy-3').setAttribute('onclick','addItenInCart('+products['darlings'][2]['id']+')')
 
     document.getElementById('product-name-4').textContent = products['darlings'][3].name
-    document.getElementById('product-new-price-4').textContent = products['darlings'][3]['new-price']
+    document.getElementById('product-new-price-4').textContent = products['darlings'][3]['newPrice']
     document.getElementById('product-old-price-4').textContent = products['darlings'][3]['old-price']
-    document.getElementById('product-img-4').setAttribute('src', products['darlings'][3]['url-img'])
+    document.getElementById('product-img-4').setAttribute('src', products['darlings'][3]['urlImg'])
     document.getElementById('btn-buy-4').setAttribute('onclick','addItenInCart('+products['darlings'][3]['id']+')')
 }
 
@@ -48,11 +49,11 @@ productsExclusive.map((product, index) => {
   `;
     const slide = `
     <div class="slider-item" id="slider-${index}">
-        <img src="${product['url-img']}" alt=""  class="img-products-exclusive">
+        <img src="${product['urlImg']}" alt=""  class="img-products-exclusive">
         <p>${product.name}</p>
         <img src="./images/products/rate.png" alt="" class="products-rate">
         <span class="price">
-            <span class="new-price"> R$ <span>${product['new-price']}</span></span>
+            <span class="new-price"> R$ <span>${product['newPrice']}</span></span>
             <span class="old-price">R$ <span>${product['old-price']}</span></span>
         </span>
         <button class="btn-buy" onclick="addItenInCart(${product.id})">COMPRAR</button>
@@ -106,11 +107,11 @@ productBestSallers.map((product, index) => {
   `;
     const slide = `
     <div class="slider-item" id="slider-${index}">
-        <img src="${product['url-img']}" alt=""  class="img-products-exclusive">
+        <img src="${product['urlImg']}" alt=""  class="img-products-exclusive">
         <p>${product.name}</p>
         <img src="./images/products/rate.png" alt="" class="products-rate">
         <span class="price">
-            <span class="new-price"> R$ <span>${product['new-price']}</span></span>
+            <span class="new-price"> R$ <span>${product['newPrice']}</span></span>
             <span class="old-price">R$ <span>${product['old-price']}</span></span>
         </span>
         <button class="btn-buy" onclick="addItenInCart(${product.id})">COMPRAR</button>

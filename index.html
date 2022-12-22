@@ -29,17 +29,14 @@
 
 
         <!-- Carrinho de compras -->
-        <div class="content-cart">
-            
-        </div>
-        <div class="cart">
+        <div id="cart" class="cart">
             <div class="header-cart">
                 <span>MINHA SACOLA</span>
-                <button class="closeCart">X</button>
+                <button onclick="closeCart()" class="closeCart">X</button>
             </div>
 
             <div class="list-cart">
-                <div class="product-iten-cart">
+                <!-- <div class="product-iten-cart">
                     <img src="./images/products/coleira.png" alt="">
                     <div class="description-iten-cart">
                         <h3 class="name-iten">Nome do item</h3>
@@ -101,14 +98,14 @@
                         <span class="size-iten">Tamanho: 3m</span>
                         <span class="price-iten">R$ 18,90</span>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="footer-cart">
                 <div class="sub-total-cart">
                     <span>SUBTOTAL: R$ <span>18,90</span></span>
                 </div>
-                <button class="btn-keep-buying">Continuar Comprando</button>
+                <button onclick="closeCart()" class="btn-keep-buying">Continuar Comprando</button>
                 <button class="btn-checkout">FINALIZAR COMPRA</button>
             </div>
         </div>
@@ -261,9 +258,8 @@
             </div>            
         </footer>
 
-    
     <script type="module" src="./config.js"></script>
     <script src="./newsletter/newsletter.js"></script>
-    <script src="./cart/cart.js"></script>
+    <script type="module" src="./cart/cart.js"></script>
 </body>
 </html>
