@@ -458,3 +458,24 @@ footer .content-info img{
 footer img{
     padding-block: 25px;
 }
+
+@media only screen and (max-width: 1220px) {
+    .content-header{
+        font-size: 13px;
+        gap: 24px;
+    }    
+  }
+
+@media only screen and (max-width: 968px) {
+.content-header{
+    font-size: 12px;
+    gap: 12px;
+}    
+}
+
+@media only screen and (max-width: 820px) {
+    .content-header{
+        font-size: 10px;
+        gap: 12px;
+    }    
+}
