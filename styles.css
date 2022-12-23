@@ -102,13 +102,13 @@ button{
     justify-content: center;
     align-items: center;
 
-    margin-top: -12px;
+    margin-top: -14px;
     padding-bottom: 2px;
 
     background-color: rgb(28, 173, 9);
     border-radius: 2px;
     color: #fff;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 
